@@ -1,14 +1,10 @@
 import React from "react";
 import ItemCart from "./ItemCart";
 
-function ItemList({ items, selectedItem, handleCardClick, handleCloseClick }) {
-    // function handleCardClick(item) {
-    //     setSelectedItem(item)
-    // }
+function ItemList({
+     items, selectedItem, handleCardClick, handleCloseClick 
+    }) {
 
-    // function handleCloseClick() {
-    //     setSelectedItem(null)
-    // }
     return (
         <div>
             <div className="Item">

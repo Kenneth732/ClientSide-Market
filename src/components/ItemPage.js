@@ -5,7 +5,6 @@ import ItemList from "./ItemList";
 function ItemPage() {
     const [items, setItems] = useState([]);
     const [selectedItem, setSelectedItem] = useState(null)
-    const [cart, setCart] = useState([]);
 
     useEffect(() => {
         fetch('https://api.escuelajs.co/api/v1/products')
