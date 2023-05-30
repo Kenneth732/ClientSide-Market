@@ -4,7 +4,7 @@ function ItemPage(){
     const [items, setItems] = useState([]);
 
     useEffect(() => {
-        fetch('https://fakestoreapi.com/products')
+        fetch('https://api.escuelajs.co/api/v1/products')
         .then((res) => res.json())
         .then((itemArrays) => {
             setItems(itemArrays)
@@ -15,8 +15,10 @@ function ItemPage(){
             <div>
                 {items.map((item) =>(
                     <div key={item.id}>
-                        <p>{item.title}</p>
                         <p>{item.price}</p>
+                        <img src={item.images} />
+                        <p>{item.title}</p>
+                        <p>{item.description}</p>
                     </div>
                 ))}
             </div>
